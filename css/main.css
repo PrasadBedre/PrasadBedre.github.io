@@ -1,0 +1,372 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* align-items: center; */
+    /* box-sizing: border-box; */
+}
+
+body {
+    margin: 0px;
+    box-sizing: border-box;
+    background: url(../img/wizard-v2-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/*portfolio*/
+
+.container {
+    background-image: url(../img/wizard-v2-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-sheet {
+    height: 460px;
+    width: 780px;
+    background-color: #ffff;
+    border-left: 25px solid black;
+    border-right: 25px solid black;
+    border-top: 10px solid black;
+    /* template designed by prasad Bedre */
+    border-bottom: 10px solid black;
+    border-radius: 10px;
+    display: grid;
+}
+
+/*main-sheet*/
+
+.main-sheet {
+    grid-template-columns: 1fr 1.8fr;
+    display: grid;
+}
+
+.left-box {
+    background-color: #FFFFF4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+}
+
+/*left-box*/
+
+.profile {
+    background-color: #ffff;
+    height: 90%;
+    width: 80%;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* template designed by prasad Bedre */
+
+.profile .first-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    /* background-color: rgb(70, 53, 224); */
+}
+
+.profile-items {
+    margin: 3px;
+}
+
+.prof-image img {
+    height: 130px;
+    border-radius: 65px;
+}
+
+.profile .second-half {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(221, 26, 26); */
+    height: 30%;
+}
+
+.second-half .contact-items {
+    margin: 3px;
+}
+
+/* template designed by prasad Bedre */
+
+.contact-img {
+    height: 15px;
+}
+
+.contact-info p {
+    font-size: 12px;
+}
+
+.social-icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-img {
+    height: 32px;
+}
+
+/*right-box*/
+
+.right-box {
+    background-color: #FFFFF4;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+/*navigation menu*/
+
+.navbar {
+    height: 40px;
+    width: 90%;
+    background-color: #ffff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    border-radius: 38px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 0px 40px;
+    padding: 0px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #0F2862;
+    padding: 5px;
+    margin: 0px 20px;
+    display: flex;
+}
+
+.navbar ul li a img {
+    height: 20px;
+    align-items: center;
+}
+
+/*replaceble sec*/
+
+.replaceble {
+    display: block;
+    align-items: center;
+    overflow: hidden;
+    /* width: 90%;
+    height: 80%; */
+}
+
+/*contact form*/
+
+.contact-form {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 80%;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    /* margin: 40px 0px; */
+}
+
+/* template designed by prasad Bedre */
+
+.cform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formgroup {
+    padding: 5px 8px;
+    margin: 5px 0px;
+}
+
+.cform input, .cform textarea {
+    padding: 0px 5px;
+    border-radius: 8px;
+    font-size: 10px;
+    border: 0.2px solid black;
+    text-align: center;
+    background-color: #fffff4;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 5px 13px rgba(0, 0, 0, 0.14);
+}
+
+.cform textarea {
+    width: 100%;
+}
+
+.cform label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/*project-box*/
+.mywork{
+    display: flex;
+    flex-direction: column;
+}
+.project-box {
+    width: 90%;
+    height: 336px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project-grid {
+    height: 125px;
+    width: 200px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*about*/
+
+/* template designed by prasad Bedre */
+
+.about {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    height: 80%;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.14);
+    border-radius: 10px;
+    /* margin: 40px 0px; */
+    /* border: 5px solid red; */
+}
+
+.about h1 {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.about p {
+    margin: 32px;
+    margin-bottom: 50px;
+    padding: 0px 14px;
+}
+
+.services-skill {
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.about-hidden {
+    margin-left: 10px;
+}
+
+.about-hidden ul li {
+    list-style: disc;
+    margin: 5px;
+    text-align: left;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: slategrey;
+}
+
+.about-hidden ul {
+    margin: 5px;
+    padding-left: 20px
+}
+
+.services-skill::-webkit-scrollbar {
+    width: 12px;
+}
+
+.services-skill::-webkit-scrollbar-button {
+    background: linear-gradient(transprent#8c00ff);
+    border-radius: 10px;
+}
+
+/* template designed by prasad Bedre */
+
+/*footer*/
+
+footer {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: white;
+    width: 100%;
+    height: 100px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400px;
+}
+
+footer .copyright {}
+
+/*classis*/
+
+.primary-header {
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.btnx {
+    background: #1d344a;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+    color: #fff;
+    font-size: 10px;
+    text-decoration: none;
+    font-family: 'Poppins'sans-serif;
+}
+
+.para {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: slategrey;
+}
+
+.secondary-header {
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+}
+
+.project-grid#hovershow.active {
+    filter: blur(20px);
+}
